@@ -9,6 +9,7 @@
 const groups=[
 {name:"Evenemang & samordning",owner:"Linus",scope:["Övergripande planering och budget","Samordning av ansvariga, möten och beslut","Kontakt med förbund, kommun och partners"]},
 {name:"Tävlingsledning",owner:"Att tillsätta",scope:["Tävlingsgenomförande och regelverk","Samverkan med TD och jury","Tävlingsbeslut och lagledarmöten"]},
+{name:"Teknisk delegat (TD)",owner:"Christin Rudh",scope:["Teknisk delegat utsedd av förbundet","Samverkan med tävlingsledning och jury"]},
 {name:"Logistik",owner:"Per-Anders (P-A)",scope:["Café, mat och funktionärsservice","Boende, vallabodar och antidopinglokal","Material, leveranser och praktisk logistik"]},
 {name:"Säkerhet",owner:"Marcus",scope:["Säkerhetsplan och sjukvårdsberedskap","Parkering, trafik, avspärrningar och ackreditering","Halkbekämpning och incidentrutiner"]},
 {name:"Arena",owner:"Christoffer",scope:["Arenabyggnation och rivning","Publikytor, skyltning och renhållning","El, IT, speakerplats och fysisk start-/måluppbyggnad"]},
@@ -17,10 +18,10 @@ const groups=[
 {name:"Spår – tävlingshelg",owner:"Ulf",scope:["Spårpreparering och kontroll under tävlingshelgen","Ban- och spårfunktionärer","Banöppning, avspärrningar och säkerhet längs spåret"]},
 {name:"Tävlingssekretariat",owner:"Kristin",scope:["Anmälningar, PM och deltagarinformation","Nummerlappar, startlistor och sekretariat","Priser, ceremonier och resultatadministration"]},
 {name:"Start & mål",owner:"Att bekräfta",scope:["Start- och målfunktionärer","Kontroller och flöden i start-/målområdet","Samordning med tidtagning och sekretariat"]},
-{name:"Tidtagning & resultat",owner:"Att bekräfta med förbundet",scope:["Tidtagning, utrustning och tester","Start- och resultatlistor","Reservrutiner och resultatpublicering"]},
+{name:"Tidtagning & resultat",owner:"Joakim Dolk (förbundet)",scope:["Tidtagning, utrustning och tester","Start- och resultatlistor","Reservrutiner och resultatpublicering"]},
 {name:"Kommunikation",owner:"Linus / att fördela",scope:["Information till funktionärer och publik","Webb, nyheter och sponsorer","Skyltning och extern kommunikation"]}];
 const meetings=[{date:"Tisdag 3 november 2026 · tid ej angiven",title:"Uppstartsmöte – SweCup 5–6",status:"Förslag till agenda",agenda:["Syfte, mål och lärdomar från tidigare arrangemang","Bekräfta organisation och ansvarsområden","Tävlingsupplägg och preliminärt tidsschema","Bemanningsbehov och kritiska förberedelser","Arbetssätt, mötesfrekvens och dokumentation","Beslut, ansvariga och nästa steg"],decisions:[]}];
-const tasks=[["Tillsätta tävlingsledare","Tävlingsorganisation","Ej påbörjad"],["Bekräfta ansvarig för start och mål","Tävlingsorganisation","Ej påbörjad"],["Bekräfta tidtagningsansvarig","Tävlingsledning","Ej påbörjad"],["Utse operativ caféansvarig","P-A","Ej påbörjad"],["Fastställa preliminärt tävlingsprogram","Tävlingsledning","Ej påbörjad"],["Ta fram bemanningsplan per område","Alla områdesansvariga","Ej påbörjad"]];
+const tasks=[["Tillsätta tävlingsledare","Tävlingsorganisation","Ej påbörjad"],["Bekräfta ansvarig för start och mål","Tävlingsorganisation","Ej påbörjad"],["Utse operativ caféansvarig","P-A","Ej påbörjad"],["Fastställa preliminärt tävlingsprogram","Tävlingsledning","Ej påbörjad"],["Ta fram bemanningsplan per område","Alla områdesansvariga","Ej påbörjad"]];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const list=a=>'<ul>'+a.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
 const pages={
